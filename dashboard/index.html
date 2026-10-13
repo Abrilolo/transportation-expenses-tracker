@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transportation Expenses</title>
+    <link rel="stylesheet" href="styles.css?v=20260925-card-solid" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="heading-group">
+          <span class="eyebrow">Live overview</span>
+          <h1>Transportation Expenses</h1>
+          <p id="lastUpdated">Waiting for data</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="status-badge"><span class="status-dot"></span> Updated</div>
+          <button id="resetFilters" type="button" title="Reset filters">↺</button>
+        </div>
+      </header>
+
+      <section class="filters" aria-label="Dashboard filters">
+        <label>
+          Card
+          <select id="cardFilter"></select>
+        </label>
+        <label>
+          Type
+          <select id="typeFilter"></select>
+        </label>
+        <label>
+          From
+          <input id="fromDate" type="date" />
+        </label>
+        <label>
+          To
+          <input id="toDate" type="date" />
+        </label>
+      </section>
+
+      <div class="summary-layout">
+        <div class="card-container">
+          <div
+            class="transit-card"
+            aria-label="Transit card preview"
+            style="background-color: #146c5f; background-image: none"
+          >
+            <div class="transit-card-top">
+              <span>IC</span>
+              <span>SUICA / PASMO</span>
+            </div>
+            <div class="transit-card-chip"></div>
+            <div class="transit-card-bottom">
+              <span id="cardPreviewLabel">Card</span>
+              <strong id="cardPreviewBalance">¥0</strong>
+            </div>
+          </div>
+        </div>
+
+        <section class="kpis" aria-label="Key metrics">
+          <article class="kpi-card kpi-expense">
+            <div class="kpi-icon" aria-hidden="true">¥</div>
+            <div class="kpi-body">
+              <span>Total expense</span>
+              <strong id="totalExpense">¥0</strong>
+            </div>
+          </article>
+          <article class="kpi-card kpi-balance">
+            <div class="kpi-icon" aria-hidden="true">◌</div>
+            <div class="kpi-body">
+              <span>Latest balance</span>
+              <strong id="latestBalance">¥0</strong>
+            </div>
+          </article>
+          <article class="kpi-card kpi-transactions">
+            <div class="kpi-icon" aria-hidden="true">↗</div>
+            <div class="kpi-body">
+              <span>Transactions</span>
+              <strong id="transactionCount">0</strong>
+            </div>
+          </article>
+          <article class="kpi-card kpi-station">
+            <div class="kpi-icon" aria-hidden="true">⌂</div>
+            <div class="kpi-body">
+              <span>Top station</span>
+              <strong id="topStation">-</strong>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <section class="content-grid">
+        <article class="panel wide">
+          <div class="panel-header">
+            <h2>Daily spending</h2>
+            <span>Yen spent by date</span>
+          </div>
+          <div id="dailyChart" class="bar-chart"></div>
+          <div class="chart-legend" aria-label="Spending legend">
+            <span><i class="legend-dot icon-blue"></i>Fare payment</span>
+            <span><i class="legend-dot icon-green"></i>Retail purchase</span>
+            <span><i class="legend-dot icon-orange"></i>Bus</span>
+            <span><i class="legend-dot icon-purple"></i>Charge</span>
+            <span><i class="legend-dot icon-gray"></i>Unknown</span>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Spending mix</h2>
+            <span>By transaction type</span>
+          </div>
+          <div id="typeChart" class="bar-chart compact"></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <h2>Frequent stations</h2>
+            <span>Entry and exit counts</span>
+          </div>
+          <div id="stationChart" class="bar-chart compact"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-header">
+            <h2>Scan history</h2>
+            <span id="scanSummary">0 scans</span>
+          </div>
+          <div id="scanStats" class="scan-stats"></div>
+        </article>
+
+        <article class="panel wide">
+          <div class="panel-header">
+            <h2>Transactions</h2>
+            <span id="tableSummary">0 records</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Change</th>
+                  <th>Balance</th>
+                  <th>Route</th>
+                </tr>
+              </thead>
+              <tbody id="transactionsTable"></tbody>
+            </table>
+          </div>
+          <button id="toggleTransactions" class="show-more-button" type="button">Show more</button>
+        </article>
+      </section>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

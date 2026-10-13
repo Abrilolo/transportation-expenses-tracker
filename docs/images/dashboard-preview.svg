@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+<title id="title">Transportation Expenses dashboard preview</title>
+<desc id="desc">A polished dashboard mockup populated only with synthetic values.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#eef4ff"/><stop offset=".54" stop-color="#fff"/><stop offset="1" stop-color="#fff4ee"/></linearGradient>
+  <linearGradient id="green" x2="1" y2="1"><stop stop-color="#13a57a"/><stop offset="1" stop-color="#79dfb4"/></linearGradient>
+  <linearGradient id="purple" x2="1" y2="1"><stop stop-color="#7a6ef7"/><stop offset="1" stop-color="#b2aaff"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#526385" flood-opacity=".12"/></filter>
+  <style>
+    .text{font-family:Segoe UI,Arial,sans-serif;fill:#1b2133}.muted{font-family:Segoe UI,Arial,sans-serif;fill:#66738f}.small{font-size:14px}.tiny{font-size:11px}.label{font-size:13px;font-weight:600}.metric{font-size:27px;font-weight:700;letter-spacing:-.6px}.title{font-size:30px;font-weight:750;letter-spacing:-1px}.card{fill:#fff;stroke:#e8ecf6;stroke-width:1}.shadow{filter:url(#shadow)}
+  </style>
+</defs>
+<rect width="1440" height="1040" fill="url(#bg)"/>
+<circle cx="95" cy="160" r="125" fill="#13a57a" opacity=".07"/><circle cx="1360" cy="790" r="180" fill="#ff5fa3" opacity=".06"/>
+<g class="shadow">
+  <rect x="72" y="44" width="1296" height="110" rx="24" fill="#ffffff" fill-opacity=".93" stroke="#e9e9f6"/>
+</g>
+<rect x="98" y="63" width="114" height="25" rx="12" fill="#e9f8f3"/><text x="112" y="80" class="text tiny" fill="#0e8968" font-weight="700" letter-spacing="1">LIVE OVERVIEW</text>
+<text x="98" y="119" class="text title">Transportation Expenses</text><text x="98" y="141" class="muted small">Updated 2026-09-24 08:42 · SYNTHETIC SAMPLE DATA</text>
+<rect x="1190" y="84" width="122" height="35" rx="17" fill="#effaf6" stroke="#d6f0e7"/><circle cx="1210" cy="101" r="5" fill="#13a57a"/><text x="1223" y="106" class="text small" font-weight="700">Updated</text>
+<g class="shadow"><rect x="72" y="174" width="1296" height="75" rx="18" fill="#ffffff" fill-opacity=".9" stroke="#e9eaf2"/></g>
+<text x="100" y="204" class="muted tiny" font-weight="700">CARD</text><rect x="100" y="211" width="220" height="24" rx="7" fill="#f7f8fc"/><text x="112" y="228" class="text small">SUICA · 2A91••••</text>
+<text x="355" y="204" class="muted tiny" font-weight="700">TYPE</text><rect x="355" y="211" width="210" height="24" rx="7" fill="#f7f8fc"/><text x="367" y="228" class="text small">All transaction types</text>
+<text x="602" y="204" class="muted tiny" font-weight="700">FROM</text><rect x="602" y="211" width="180" height="24" rx="7" fill="#f7f8fc"/><text x="614" y="228" class="text small">2026-09-01</text>
+<text x="818" y="204" class="muted tiny" font-weight="700">TO</text><rect x="818" y="211" width="180" height="24" rx="7" fill="#f7f8fc"/><text x="830" y="228" class="text small">2026-09-24</text>
+<text x="1080" y="225" class="muted small">↺  Reset filters</text>
+<!-- transit card -->
+<g class="shadow"><rect x="72" y="272" width="370" height="190" rx="22" fill="#146c5f"/></g>
+<circle cx="390" cy="315" r="100" fill="#ffffff" opacity=".055"/><text x="103" y="310" fill="#dff8ed" font-family="Segoe UI,Arial" font-size="16" font-weight="700">IC</text><text x="158" y="310" fill="#dff8ed" font-family="Segoe UI,Arial" font-size="13" font-weight="700" letter-spacing="1.5">SUICA / PASMO</text>
+<rect x="103" y="332" width="45" height="33" rx="8" fill="#d9c48b" opacity=".95"/><path d="M111 333v32m14-32v32m14-32v32M104 343h43m-43 12h43" stroke="#8d7954" stroke-width="2" opacity=".75"/>
+<text x="103" y="416" fill="#b7ded4" font-family="Segoe UI,Arial" font-size="12">CARD</text><text x="103" y="441" fill="#ffffff" font-family="Segoe UI,Arial" font-size="18" font-weight="700">2A91••••</text><text x="393" y="439" text-anchor="end" fill="#ffffff" font-family="Segoe UI,Arial" font-size="25" font-weight="700">¥4,820</text>
+<!-- KPI cards -->
+<g class="shadow"><rect x="464" y="272" width="214" height="88" rx="18" class="card"/><rect x="696" y="272" width="214" height="88" rx="18" class="card"/><rect x="928" y="272" width="214" height="88" rx="18" class="card"/><rect x="1160" y="272" width="208" height="88" rx="18" class="card"/></g>
+<circle cx="493" cy="304" r="15" fill="#fff0f6"/><text x="493" y="310" text-anchor="middle" class="text small" fill="#dd3d86" font-weight="700">¥</text><text x="519" y="302" class="muted tiny">TOTAL EXPENSE</text><text x="490" y="341" class="text metric">¥8,460</text>
+<circle cx="725" cy="304" r="15" fill="#e9f8f3"/><text x="725" y="309" text-anchor="middle" class="text small" fill="#0e8968" font-weight="700">◌</text><text x="751" y="302" class="muted tiny">LATEST BALANCE</text><text x="722" y="341" class="text metric">¥4,820</text>
+<circle cx="957" cy="304" r="15" fill="#f0efff"/><text x="957" y="309" text-anchor="middle" class="text small" fill="#6256dd" font-weight="700">↗</text><text x="983" y="302" class="muted tiny">TRANSACTIONS</text><text x="954" y="341" class="text metric">24</text>
+<circle cx="1188" cy="304" r="15" fill="#fff3e5"/><text x="1188" y="309" text-anchor="middle" class="text small" fill="#d98932" font-weight="700">⌂</text><text x="1214" y="302" class="muted tiny">TOP STATION</text><text x="1185" y="341" class="text" font-size="20" font-weight="700">Shinjuku</text>
+<!-- daily spending -->
+<g class="shadow"><rect x="72" y="486" width="760" height="318" rx="20" class="card"/><rect x="852" y="486" width="516" height="318" rx="20" class="card"/></g>
+<text x="102" y="526" class="text" font-size="19" font-weight="700">Daily spending</text><text x="102" y="549" class="muted small">Yen spent by date · September 2026</text>
+<line x1="123" y1="745" x2="790" y2="745" stroke="#e6eaf3"/><line x1="123" y1="690" x2="790" y2="690" stroke="#edf0f6"/><line x1="123" y1="635" x2="790" y2="635" stroke="#edf0f6"/><line x1="123" y1="580" x2="790" y2="580" stroke="#edf0f6"/>
+<text x="102" y="749" class="muted tiny">¥0</text><text x="92" y="694" class="muted tiny">¥500</text><text x="84" y="639" class="muted tiny">¥1,000</text><text x="84" y="584" class="muted tiny">¥1,500</text>
+<g opacity=".95">
+  <rect x="150" y="676" width="30" height="69" rx="5" fill="#5f8cff"/><rect x="228" y="650" width="30" height="95" rx="5" fill="#5f8cff"/><rect x="306" y="692" width="30" height="53" rx="5" fill="#48bfa6"/><rect x="384" y="612" width="30" height="133" rx="5" fill="#5f8cff"/><rect x="462" y="664" width="30" height="81" rx="5" fill="#5f8cff"/><rect x="540" y="624" width="30" height="121" rx="5" fill="#ffb95f"/><rect x="618" y="674" width="30" height="71" rx="5" fill="#5f8cff"/><rect x="696" y="603" width="30" height="142" rx="5" fill="#5f8cff"/>
+</g>
+<text x="145" y="765" class="muted tiny">Sep 03</text><text x="223" y="765" class="muted tiny">Sep 06</text><text x="301" y="765" class="muted tiny">Sep 09</text><text x="379" y="765" class="muted tiny">Sep 12</text><text x="457" y="765" class="muted tiny">Sep 15</text><text x="535" y="765" class="muted tiny">Sep 18</text><text x="613" y="765" class="muted tiny">Sep 21</text><text x="691" y="765" class="muted tiny">Sep 24</text>
+<circle cx="117" cy="785" r="5" fill="#5f8cff"/><text x="128" y="789" class="muted tiny">Fare payment</text><circle cx="238" cy="785" r="5" fill="#48bfa6"/><text x="249" y="789" class="muted tiny">Retail</text><circle cx="326" cy="785" r="5" fill="#ffb95f"/><text x="337" y="789" class="muted tiny">Bus</text><circle cx="390" cy="785" r="5" fill="#7a6ef7"/><text x="401" y="789" class="muted tiny">Charge</text>
+<!-- side cards -->
+<text x="882" y="526" class="text" font-size="19" font-weight="700">Spending mix</text><text x="882" y="549" class="muted small">By transaction type</text>
+<circle cx="980" cy="662" r="65" fill="none" stroke="#eef1f7" stroke-width="22"/><circle cx="980" cy="662" r="65" fill="none" stroke="#5f8cff" stroke-width="22" stroke-dasharray="198 210" transform="rotate(-90 980 662)"/><circle cx="980" cy="662" r="65" fill="none" stroke="#48bfa6" stroke-width="22" stroke-dasharray="76 332" stroke-dashoffset="-198" transform="rotate(-90 980 662)"/><circle cx="980" cy="662" r="65" fill="none" stroke="#ffb95f" stroke-width="22" stroke-dasharray="54 354" stroke-dashoffset="-274" transform="rotate(-90 980 662)"/><text x="980" y="657" text-anchor="middle" class="muted tiny">TOTAL</text><text x="980" y="680" text-anchor="middle" class="text" font-size="18" font-weight="700">¥8.46k</text>
+<circle cx="1088" cy="611" r="5" fill="#5f8cff"/><text x="1102" y="616" class="text small">Rail fare</text><text x="1327" y="616" text-anchor="end" class="muted small">68%</text><circle cx="1088" cy="649" r="5" fill="#48bfa6"/><text x="1102" y="654" class="text small">Retail</text><text x="1327" y="654" text-anchor="end" class="muted small">21%</text><circle cx="1088" cy="687" r="5" fill="#ffb95f"/><text x="1102" y="692" class="text small">Bus</text><text x="1327" y="692" text-anchor="end" class="muted small">11%</text>
+<line x1="882" y1="729" x2="1338" y2="729" stroke="#edf0f6"/><text x="882" y="759" class="text" font-size="18" font-weight="700">Frequent stations</text><text x="882" y="784" class="muted small">Shinjuku · 12 visits</text><rect x="1085" y="772" width="241" height="9" rx="4" fill="#f0f2f8"/><rect x="1085" y="772" width="192" height="9" rx="4" fill="#f58b34"/>
+<!-- transaction list -->
+<g class="shadow"><rect x="72" y="826" width="1296" height="170" rx="20" class="card"/></g>
+<text x="102" y="867" class="text" font-size="19" font-weight="700">Recent transactions</text><text x="1329" y="866" text-anchor="end" class="muted small">24 records · 3 synthetic examples shown</text>
+<text x="102" y="899" class="muted tiny" font-weight="700">DATE</text><text x="310" y="899" class="muted tiny" font-weight="700">TYPE</text><text x="565" y="899" class="muted tiny" font-weight="700">CHANGE</text><text x="735" y="899" class="muted tiny" font-weight="700">BALANCE</text><text x="922" y="899" class="muted tiny" font-weight="700">ROUTE</text>
+<line x1="100" y1="910" x2="1340" y2="910" stroke="#edf0f6"/><text x="102" y="936" class="text small">2026-09-24</text><text x="310" y="936" class="text small">Rail fare</text><text x="565" y="936" class="text small" fill="#dd3d86">−¥220</text><text x="735" y="936" class="text small">¥4,820</text><text x="922" y="936" class="text small">Shinjuku → Shibuya</text>
+<line x1="100" y1="947" x2="1340" y2="947" stroke="#f2f4f8"/><text x="102" y="971" class="text small">2026-09-23</text><text x="310" y="971" class="text small">Rail fare</text><text x="565" y="971" class="text small" fill="#dd3d86">−¥180</text><text x="735" y="971" class="text small">¥5,040</text><text x="922" y="971" class="text small">Tokyo → Kanda</text>
+<rect x="72" y="1010" width="1296" height="1" fill="#d9dfed"/><text x="720" y="1030" text-anchor="middle" class="muted tiny">Illustrative product preview · synthetic values · not a cardholder screenshot</text>
+</svg>

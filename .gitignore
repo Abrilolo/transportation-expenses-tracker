@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+# Generated exports
+output/*.json
+output/*.xlsx
+dashboard/data.js

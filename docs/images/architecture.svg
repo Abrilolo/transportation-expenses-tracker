@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="650" viewBox="0 0 1480 650" role="img" aria-labelledby="title desc">
+<title id="title">Transportation Expenses Tracker architecture</title>
+<desc id="desc">A source-backed data-flow diagram from card scan through parsing and storage to Excel and dashboard outputs.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f4f7ff"/><stop offset="1" stop-color="#fff7f1"/></linearGradient>
+  <linearGradient id="green" x2="1" y2="1"><stop stop-color="#13a57a"/><stop offset="1" stop-color="#79dfb4"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#526385" flood-opacity=".13"/></filter>
+  <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L11 5.5L0 11z" fill="#8c98b1"/></marker>
+  <style>.txt{font-family:Segoe UI,Arial,sans-serif;fill:#1b2133}.muted{font-family:Segoe UI,Arial,sans-serif;fill:#66738f}.title{font-size:32px;font-weight:750;letter-spacing:-.7px}.head{font-size:18px;font-weight:700}.body{font-size:14px}.tiny{font-size:12px}</style>
+</defs>
+<rect width="1480" height="650" rx="30" fill="url(#bg)"/>
+<circle cx="80" cy="100" r="100" fill="#13a57a" opacity=".07"/><circle cx="1390" cy="570" r="150" fill="#7a6ef7" opacity=".07"/>
+<text x="72" y="70" class="txt title">From tap to expense insight</text><text x="72" y="101" class="muted" font-size="16">A local-first pipeline with clear hardware, domain, persistence, and presentation boundaries</text>
+<!-- arrows row -->
+<g stroke="#8c98b1" stroke-width="3" fill="none" marker-end="url(#arrow)">
+  <path d="M256 314H300"/><path d="M488 314H532"/><path d="M720 314H764"/><path d="M952 314H996"/>
+</g>
+<!-- card -->
+<g filter="url(#shadow)"><rect x="60" y="215" width="196" height="198" rx="22" fill="#146c5f"/></g>
+<text x="88" y="255" fill="#dff8ed" font-family="Segoe UI,Arial" font-size="13" font-weight="700" letter-spacing="1.4">INPUT</text><text x="88" y="296" fill="#fff" font-family="Segoe UI,Arial" font-size="23" font-weight="700">Suica / PASMO</text><text x="88" y="326" fill="#dff8ed" font-family="Segoe UI,Arial" font-size="14">FeliCa history</text><text x="88" y="351" fill="#dff8ed" font-family="Segoe UI,Arial" font-size="14">Up to 20 recent records</text><rect x="88" y="371" width="70" height="22" rx="6" fill="#d9c48b"/><path d="M102 372v20m16-20v20m16-20v20" stroke="#8d7954" stroke-width="2"/>
+<!-- NFC -->
+<g filter="url(#shadow)"><rect x="300" y="215" width="188" height="198" rx="22" fill="#fff" stroke="#dfe6f1"/></g>
+<circle cx="394" cy="269" r="30" fill="#e9f8f3"/><path d="M383 270c6-8 16-8 22 0m-18 5c4-5 10-5 14 0m-9 6c1-2 3-2 4 0" fill="none" stroke="#0e8968" stroke-width="3" stroke-linecap="round"/><text x="394" y="329" text-anchor="middle" class="txt head">USB NFC reader</text><text x="394" y="356" text-anchor="middle" class="muted body">nfcpy · Type 3 tag</text><text x="394" y="382" text-anchor="middle" class="muted tiny">nfc_reader.py</text>
+<!-- parse -->
+<g filter="url(#shadow)"><rect x="532" y="215" width="188" height="198" rx="22" fill="#fff" stroke="#dfe6f1"/></g>
+<circle cx="626" cy="269" r="30" fill="#f0efff"/><path d="M614 260h24m-24 9h24m-24 9h15" stroke="#6256dd" stroke-width="3" stroke-linecap="round"/><text x="626" y="329" text-anchor="middle" class="txt head">Parse &amp; enrich</text><text x="626" y="356" text-anchor="middle" class="muted body">16-byte records</text><text x="626" y="382" text-anchor="middle" class="muted tiny">parser · station map · romaji</text>
+<!-- storage -->
+<g filter="url(#shadow)"><rect x="764" y="215" width="188" height="198" rx="22" fill="#fff" stroke="#dfe6f1"/></g>
+<circle cx="858" cy="269" r="30" fill="#fff0f6"/><ellipse cx="858" cy="260" rx="15" ry="6" fill="none" stroke="#dd3d86" stroke-width="3"/><path d="M843 260v18c0 8 30 8 30 0v-18m-30 9c0 8 30 8 30 0" fill="none" stroke="#dd3d86" stroke-width="3"/><text x="858" y="329" text-anchor="middle" class="txt head">Local history</text><text x="858" y="356" text-anchor="middle" class="muted body">JSON · deduplicated</text><text x="858" y="382" text-anchor="middle" class="muted tiny">storage.py</text>
+<!-- output branch -->
+<path d="M952 314H1004V216H1032M1004 314V412H1032" fill="none" stroke="#8c98b1" stroke-width="3" marker-end="url(#arrow)"/>
+<g filter="url(#shadow)"><rect x="1032" y="160" width="370" height="128" rx="22" fill="#fff" stroke="#dfe6f1"/><rect x="1032" y="340" width="370" height="148" rx="22" fill="#fff" stroke="#dfe6f1"/></g>
+<rect x="1056" y="183" width="50" height="50" rx="13" fill="#e9f8f3"/><text x="1081" y="216" text-anchor="middle" class="txt" font-size="27" font-weight="700" fill="#0e8968">X</text><text x="1124" y="200" class="txt head">Excel expense report</text><text x="1124" y="226" class="muted body">Formatted workbook · openpyxl</text><text x="1124" y="253" class="muted tiny">excel_exporter.py → output/transactions.xlsx</text>
+<rect x="1056" y="368" width="50" height="50" rx="13" fill="#f0efff"/><rect x="1067" y="379" width="28" height="26" rx="3" fill="none" stroke="#6256dd" stroke-width="2"/><path d="M1072 399v-8m7 8v-13m7 13v-18" stroke="#6256dd" stroke-width="3"/><text x="1124" y="378" class="txt head">Interactive dashboard</text><text x="1124" y="404" class="muted body">HTML · CSS · vanilla JavaScript</text><text x="1124" y="431" class="muted tiny">dashboard_builder.py → data.js → browser</text><text x="1056" y="463" class="muted tiny">Filters · KPIs · spending charts · scans · transaction table</text>
+<!-- privacy footer -->
+<rect x="60" y="532" width="1342" height="67" rx="18" fill="#ffffff" fill-opacity=".8" stroke="#e3e8f2"/><circle cx="91" cy="565" r="15" fill="#e9f8f3"/><path d="M91 556l9 4v7c0 6-4 9-9 12-5-3-9-6-9-12v-7z" fill="none" stroke="#0e8968" stroke-width="2"/><text x="119" y="561" class="txt" font-size="15" font-weight="700">Local-first by design</text><text x="119" y="582" class="muted body">Card identifiers, JSON history, Excel exports, and generated dashboard data stay on the user's machine.</text><text x="1368" y="574" text-anchor="end" class="muted tiny">Sensitive output paths are excluded from Git</text>
+<text x="72" y="628" class="muted tiny">Architecture based on the repository's Python modules and dashboard implementation.</text>
+</svg>
